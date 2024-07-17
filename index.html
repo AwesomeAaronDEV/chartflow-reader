@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Diagrama de Flujo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header><h1>Vistazo rápido a los diagramas de flujo.</h1></header>
+<main>
+    <h3>Diagrama de Flujo: Una Herramienta para Visualizar Procesos</h3>
+    <p>
+        Un diagrama de flujo es una representación gráfica que muestra el flujo de un proceso, sistema o
+        algoritmo, utilizando una serie de símbolos conectados por flechas. Los diagramas de flujo son ampliamente
+        utilizados en programación, ingeniería, y negocios para documentar, analizar, planificar y mejorar procesos
+        y sistemas.
+    </p>
+
+    <h3>Ventajas de los Diagramas de Flujo</h3>
+    <p>
+        Claridad: Facilitan la comprensión de procesos complejos.<br>
+        Comunicación: Mejoran la comunicación entre equipos, ya que proporcionan una visualización clara del proceso.<br>
+        Documentación: Sirven como documentación visual del sistema o proceso.<br>
+        Detección de Errores: Ayudan a identificar posibles problemas o ineficiencias en el flujo del proceso.
+    </p>
+
+    <h3>Componentes Principales de un Diagrama de Flujo</h3>
+    <p>
+        Óvalo: Representa el inicio y el fin del diagrama. A menudo se etiquetan con "Inicio" y "Fin".<br>
+        Rectángulo: Representa una operación o proceso que se debe realizar.<br>
+        Rombo: Representa una decisión que provoca un desvío en el flujo, usualmente con "sí/no" o "verdadero/falso".<br>
+        Paralelogramo: Representa operaciones de entrada y salida, como leer datos de un usuario o mostrar resultados.<br>
+        Flechas: Indican la dirección del flujo del control de un proceso al siguiente.
+    </p>
+
+    <h3>Símbolos Adicionales</h3>
+    <p>
+        Conector: Un pequeño círculo o flecha que se usa para conectar diferentes partes del diagrama de
+        flujo, especialmente útil en diagramas grandes.<br>
+        Documentación: Un rectángulo con una línea ondulada en el borde inferior, utilizado para indicar que se
+        necesita documentación adicional.<br>
+        Predefinido: Un rectángulo con líneas dobles, usado para representar procesos o subprocesos
+        previamente definidos.
+    </p>
+
+    <h3>Creación de un Diagrama de Flujo</h3>
+    <p>
+        Definir el Proceso: Determinar el proceso o algoritmo que se va a documentar.<br>
+        Identificar los Pasos Clave: Dividir el proceso en pasos individuales.<br>
+        Seleccionar los Símbolos Apropiados: Elegir los símbolos correctos para representar cada paso.<br>
+        Dibujar el Diagrama: Utilizar los símbolos seleccionados para representar el proceso de manera secuencial,
+        conectándolos con flechas.<br>
+        Revisar y Refinar: Asegurarse de que el diagrama de flujo sea claro y preciso, y refinarlo si es necesario.
+    </p>
+
+    <h3>Ejemplo de Diagrama de Flujo</h3>
+    <h4>Supongamos que queremos crear un diagrama de flujo para un proceso simple de inicio de sesión en una
+        aplicación.</h4>
+    <p>
+        Inicio<br>
+        Mostrar pantalla de inicio de sesión (Rectángulo)<br>
+        Usuario introduce nombre de usuario y contraseña (Paralelogramo)<br>
+        ¿Las credenciales son correctas? (Rombo)<br>
+        Sí:<br>
+        Mostrar mensaje "Inicio de sesión exitoso" (Rectángulo)<br>
+        Fin (Óvalo)<br>
+        No:<br>
+        Mostrar mensaje "Credenciales incorrectas" (Rectángulo)<br>
+        Fin (Óvalo)
+    </p>
+
+    <p>
+        Herramientas para Crear Diagramas de Flujo<br>
+        Hay muchas herramientas y software disponibles para crear diagramas de flujo, como:<br>
+        Microsoft Visio: Una de las herramientas más populares para crear diagramas.<br>
+        Lucidchart: Una herramienta en línea que permite crear diagramas de flujo colaborativos.<br>
+        Draw.io: Una herramienta gratuita y fácil de usar para crear diagramas de flujo y otros tipos de diagramas.<br>
+        Gliffy: Otra herramienta en línea para crear diagramas de flujo y diagramas UML.
+    </p>
+
+    <p>
+        Los diagramas de flujo son herramientas poderosas para visualizar y comprender procesos complejos. Al usar
+        símbolos estandarizados y seguir una estructura lógica, los diagramas de flujo pueden ayudar a simplificar
+        la planificación y la comunicación de ideas y procesos en una variedad de campos.
+    </p>
+</main><aside>
+    <svg width="500" height="500" viewBox="0 0 500 500" class="flowchart">
+        <ellipse cx="250" cy="50" rx="60" ry="30" class="start"></ellipse>
+        <text x="190" y="50" class="symbol-text">Inicio</text>
+
+        <rect x="190" y="100" width="120" height="60" class="process"></rect>
+        <text x="220" y="130" class="symbol-text">Mostrar pantalla de inicio de sesión</text>
+
+        <rect x="190" y="180" width="120" height="60" class="process"></rect>
+        <text x="220" y="210" class="symbol-text">Usuario introduce nombre de usuario y contraseña</text>
+
+        <polygon points="250,270 310,320 250,370 190,320" class="decision"></polygon>
+        <text x="180" y="320" class="symbol-text">¿Credenciales correctas?</text>
+
+        <line x1="250" y1="80" x2="250" y2="100" stroke="black" stroke-width="2"></line>
+        <line x1="250" y1="160" x2="250" y2="180" stroke="black" stroke-width="2"></line>
+        <line x1="250" y1="240" x2="250" y2="270" stroke="black" stroke-width="2"></line>
+        <line x1="250" y1="370" x2="250" y2="400" stroke="black" stroke-width="2"></line>
+
+        <ellipse cx="250" cy="420" rx="60" ry="30" class="end"></ellipse>
+        <text x="200" y="420" class="symbol-text">Inicio de sesión exitoso</text>
+
+        <line x1="190" y1="320" x2="130" y2="320" stroke="black" stroke-width="2"></line>
+        <line x1="130" y1="320" x2="130" y2="350" stroke="black" stroke-width="2"></line>
+
+        <rect x="70" y="350" width="120" height="60" class="process"></rect>
+        <text x="100" y="380" class="symbol-text">Credenciales incorrectas</text>
+
+        <line x1="130" y1="410" x2="130" y2="440" stroke="black" stroke-width="2"></line>
+
+        <ellipse cx="130" cy="460" rx="60" ry="30" class="end"></ellipse>
+        <text x="100" y="460" class="symbol-text">Fin</text>
+    </svg>
+
+    <h3>Elementos del Diagrama de Flujo</h3>
+    <div>
+        <p>
+        <svg width="100" height="100" viewBox="0 0 100 50">
+            <ellipse cx="50" cy="25" rx="30" ry="15" fill="#a57c65"></ellipse>
+        </svg>
+        Inicio: Marca el inicio del flujo del proceso.
+        <br>
+        <svg width="100" height="100" viewBox="0 0 100 50">
+            <rect x="10" y="10" width="80" height="30" fill="#688b8a"></rect>
+        </svg>
+        Proceso: Representa una tarea o acción dentro del proceso.
+        <br>
+        <svg width="100" height="100" viewBox="0 0 100 100">
+            <polygon points="50,10 80,30 50,50 20,30" fill="#faefd4"></polygon>
+        </svg>
+        Decisión: Indica una decisión que debe tomarse en el flujo.
+        <br>
+        <svg width="100" height="100" viewBox="0 0 100 50">
+            <rect x="10" y="10" width="80" height="30" fill="#688b8a"></rect>
+        </svg>
+        Entrada/Salida: Representa operaciones de entrada y salida de datos.
+        <br>
+        <svg width="100" height="100" viewBox="0 0 100 50">
+            <ellipse cx="50" cy="25" rx="30" ry="15" fill="#a57c65"></ellipse>
+        </svg>
+        Fin: Marca el final del flujo del proceso.
+        <br>
+    </div>
+    <p>
+</aside>
+
+</body>
+</html>
